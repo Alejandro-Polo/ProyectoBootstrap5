@@ -1,0 +1,31 @@
+comandos y apuntes minikube y kubernetes clase
+
+minikube start
+
+
+si sale minikube the docker driver should not be used with root privileges
+solucion:
+minikube start --force --driver=docker
+
+
+
+kubectl
+
+kubectl create secrete docker-regisstry /nombre/ --docker-server=/Lo que te da AWS en las ECR cambiar las password de amazon/
+
+todo con archivos yaml
+para cada recurso un yaml
+un contenedor por pod / un microservicio por pod
+simplemente añadir un -name y añadirlo al pod
+
+
+permisos para enlazar mi ecr 
+le digo que se descarge el pod de el ecr
+
+kubernetes
+escalabilidad tolerancia a fallos y actualizaciones
+
+replicaset
+escalabilidad tolerancia a fallos
+
+
