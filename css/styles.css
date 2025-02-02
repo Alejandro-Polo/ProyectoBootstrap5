@@ -117,4 +117,34 @@ background-color: var(--first-alpha-color);
     background-color: var(--second-alpha-color);
 }
 
+.img {
+    overflow: hidden;
+}
 
+.img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Cambios necesarios para que el responsive del telefono se vea mejor */
+@media (max-width: 576px) { 
+
+    .img-primera img {
+        object-position: left;
+        height: 300px;
+        width: 160%;
+    }
+
+    .img-ultima img {
+        object-position: right; 
+        height: 300px;
+        width: 130%;
+    }
+}
+/* Fin de estilos clientes */
+
+/* Estilo pagina comencemos */
+.texto-justify {
+    text-align: justify;
+  }
